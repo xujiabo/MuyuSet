@@ -2,6 +2,24 @@
 
 Minimal inference code for inverse design of a **muyu (木鱼 / wooden fish)**, a hollow wooden percussion instrument. Given a sequence of strikes, the pipeline searches for a shared set of **three instrument geometries** and assigns an instrument and strike action to every hit.
 
+## Demo
+
+视频里的木鱼是根据音频生成的，视频里的敲击声均是敲木鱼的声音。
+
+### 童年
+
+https://github.com/user-attachments/assets/0af6f9fc-bf60-4c37-b3d1-ae2f04da69ac
+
+[下载视频](assets/demo/童年.mp4)
+
+### 红山果
+
+https://github.com/user-attachments/assets/256134a5-8413-4aa0-9cab-3c98a8d0235a
+
+[下载视频](assets/demo/红山果.mp4)
+
+## Method overview
+
 ```text
 Strike features → conditional Diffusion → frozen-renderer ranking
                 → differentiable surrogate refinement → frozen-renderer selection

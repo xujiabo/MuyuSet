@@ -6,5 +6,7 @@ runs/
 *.zip
 *.pdf
 *.mp4
+!/assets/demo/童年.mp4
+!/assets/demo/红山果.mp4
 .DS_Store
 Thumbs.db
