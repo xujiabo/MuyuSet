@@ -89,7 +89,3 @@ python -m unittest discover -s tests -v
 Verified locally with Python 3.11.15, PyTorch 2.11.0, NumPy 2.4.4, and SciPy 1.17.1: **35 tests passed**, a CPU smoke run passed, and the full default 128-attempt run passed on CUDA. The extracted backend's 135 signatures for an audited geometry triple were also identical to the archived implementation.
 
 The two included checkpoints total approximately **30 MiB**. Inference loads them with `torch.load(..., weights_only=True)` and strict architecture/statistics checks. Training paths and unused training configuration were removed; source SHA-256 fingerprints were retained. `tools/export_weights.py` is an optional maintainer utility; it requires explicit trust confirmation before reading original pickle-enabled training checkpoints. Never use that utility on untrusted downloads.
-
-## Before publishing
-
-See [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md). **A code/weights license has not been selected**; the repository is prepared for upload but has not been published. Choose the license and confirm asset rights before making it public. `.gitignore` excludes run outputs, caches, and local ZIP/PDF/video files; weights and the synthetic example are intentionally included.
